@@ -38,8 +38,8 @@ MONGO_URL=   "VOTRE_URL_MONGODB"
 KEY_SECRET = "CLE_DE_VOTRE_CHOIX"
 
   
-    Remplacez MONGO_URL par l'URL de connexion à votre base de données MongoDB, sous le format "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority".
-    Remplacez KEY_SECRET par une clé secrète de votre choix pour les tokens JWT.
+    Remplacez  "VOTRE_URL_MONGODB" par l'URL de connexion à votre base de données MongoDB, sous le format "mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority".
+    Remplacez "CLE_DE_VOTRE_CHOIX" par une clé secrète de votre choix pour les tokens JWT.
 
 Lancement du backend :
 
