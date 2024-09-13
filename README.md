@@ -31,6 +31,7 @@ Avant de lancer le projet, assurez-vous d'avoir configuré votre base de donnée
     Une fois que vous avez accès à votre tableau de bord, créez un cluster et configurez-le selon vos besoins.
 
     Récupérez votre code URI sur MongoDB et ajoutez-le dans un fichier .env que vous créez à la racine du projet ( backend ). Configurez les variables d'environnement suivantes (variables listées dans le fichier .env):
+Créez un fichier .env a la racine du dossier back-end et entrez les informations suivantes :
 
 MONGO_URL=   "VOTRE_URL_MONGODB"
 
