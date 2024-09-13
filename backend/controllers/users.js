@@ -4,6 +4,13 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/users");
 
 exports.signup = (req, res, next) => {
+  const emailRegex = /\S+@\S+\.\S+/; // Regex pour vérifier un format d'email de base
+
+  // Vérifier si l'email est valide
+  if (!emailRegex.test(req.body.email)) {
+    return res.status(400).json({ message: "Email invalide." });
+  }
+
   bcrypt
     .hash(req.body.password, 10)
     .then((hash) => {
@@ -13,7 +20,7 @@ exports.signup = (req, res, next) => {
       });
       return user.save();
     })
-    .then(() => res.status(201).json({ message: "Utilisateur crée !" }))
+    .then(() => res.status(201).json({ message: "Utilisateur créé !" }))
     .catch((error) => res.status(400).json({ error }));
 };
 
